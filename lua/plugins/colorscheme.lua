@@ -1,9 +1,15 @@
 -- Theme/Colorscheme (uncomment section for whichever theme you prefer or use your own)
 
--- Rose Pine Theme
 return {
+  -- Rose Pine Theme
   {
     "rose-pine/neovim",
+    -- opts = {
+    --   transparency = true,
+    --   styles = {
+    --     transparency = true,
+    --   },
+    -- },
     name = "rose-pine",
     config = function()
       require("rose-pine").setup({
@@ -11,7 +17,6 @@ return {
           transparency = true,
         },
       })
-      vim.cmd("colorscheme rose-pine")
     end,
   },
   -- Kanagawa Theme (Custom Palette)
